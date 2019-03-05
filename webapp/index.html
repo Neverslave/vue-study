@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>问卷调查app</title>
+</head>
+<body>
+<div id="app">
+     <my-radio :question="radio.question" :choice="radio.choice" :gender="radio.name"></my-radio>
+<!--     <v-checkbox></v-checkbox>
+    <v-text></v-text>
+    <v-buttons></v-buttons>-->
+</div>
+</body>
+<template  id="radio">
+    <div>
+    <p class="question">{{question}}</p>
+    <div v-for="list in choice">
+        <input type="radio" :value="list" id="list" :name="gender"><label for="list">{{list}}</label>
+    </div>
+    </div>
+</template>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="radio.js"></script>
+<script src="index.js"></script>
+
+</html>
