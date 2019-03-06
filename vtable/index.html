@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
 <div id="app">
-    <v-table :colums="colunms" :data="data">
-
-    </v-table>
+    <v-table :columns="columns" :data="data"></v-table>
+    <button  @click="handleAddData()">添加数据</button>
 </div>
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="vtable.js"></script>
 <script src="index.js">
 </script>
-<script src="vtable.js"></script>
+
 </html>
